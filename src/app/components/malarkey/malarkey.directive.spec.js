@@ -12,7 +12,7 @@
     var vm;
     var el;
 
-    beforeEach(module('dreamactionLanding'));
+    beforeEach(module('test'));
     beforeEach(inject(function($compile, $rootScope, githubContributor, $q, _$log_) {
       $log = _$log_;
 

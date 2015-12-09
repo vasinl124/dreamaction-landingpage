@@ -1,11 +1,13 @@
 .acme-malarkey {
   text-transform: capitalize;
-  color: #cb3837;
+  color: white;
+  font-size: 40px;
+  font-family: 'rsu bold';
 
   &:after {
-    animation: cursor-blink 0.4s linear infinite;
+    animation: cursor-blink 0.8s linear infinite;
     content: "|";
-    color: #cb3837;
+    color: white;
   }
 }
 
