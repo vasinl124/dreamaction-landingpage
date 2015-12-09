@@ -14,12 +14,6 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .state('inspire', {
-        url: '/inspire',
-        templateUrl: 'app/conversionpage/partials/conversionpage.html',
-        controller: 'conversionpageCtrl',
-        controllerAs: 'conversionpage'
-      })
     $urlRouterProvider.otherwise('/');
   }
 
