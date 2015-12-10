@@ -57,6 +57,8 @@ html, body {
 }
 
 .question-col {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	font-family: 'rsu regular';
 	letter-spacing: 5px;	
 	h1 {
@@ -72,18 +74,40 @@ html, body {
 	}
 }
 .reason-row {
-	box-shadow: inset 2px 43px 300px 63px rgba(0,0,0,0.75);
-	background: url('../assets/images/jom/a3.jpg') no-repeat center center;
+	background-color: gray;
 	background-size: cover;
+	padding: 40px;
+	.row-title {
+		padding-bottom: 20px;
+	}
 	h1, h3, p {
 		color: white;
+	}
+	.caption {
+		// padding: 100px;
+		padding-top: 40px;
+		.caption-title {
+			font-size: 150px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.highlight-row {
+	padding:20px;
+	background-color: black;
+	color:white;
+	.col {
+		img {
+			padding: 15px;
+		}
 	}
 }
 .testimonial-row {
 	// box-shadow: inset 0px 11px 26px -8px rgba(0,0,0,1);
 	padding: 40px;
-	.thumbnail {
-		background: gray;
+	.row-title {
+		padding-bottom: 20px;
 	}
 	.img-circle {
 		width: 100px;
@@ -95,12 +119,14 @@ html, body {
 		height: 50px;
 	}
 	.caption {
+		padding: 40px;
 		padding-top: 20px;
 	}
 }
 
 .slideshow-row {
 	height: 400px;
+	// box-shadow: inset 2px 43px 300px 63px rgba(0,0,0,0.75);
 	background: url('../assets/images/jom/a4.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
@@ -108,7 +134,7 @@ html, body {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		p {
+		h4, p {
 			color: white;
 		}
 	}
