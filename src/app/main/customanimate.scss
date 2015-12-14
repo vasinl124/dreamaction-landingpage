@@ -1,0 +1,23 @@
+/* Main View */
+.ng-enter {
+  transition: all 3s linear;
+}
+.ng-enter {
+  opacity: 0;
+}
+.ng-enter-stagger {
+	transition-delay:0.1s;
+}
+.ng-enter-active {
+    opacity: 1;
+}
+
+// /* Project Logo */
+.projectLogo.ng-hide-add, .projectLogo.ng-hide-remove {
+  transition: all linear 1s;
+}
+
+.projectLogo.ng-hide {
+  line-height: 0;
+  opacity: 0;
+}

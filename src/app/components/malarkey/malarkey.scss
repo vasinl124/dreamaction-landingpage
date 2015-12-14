@@ -25,3 +25,15 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .acme-malarkey {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .acme-malarkey {
+    font-size: 25px;
+  }
+}

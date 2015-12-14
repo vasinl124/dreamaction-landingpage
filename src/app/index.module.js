@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('dreamactionLanding', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ui.bootstrap', 'toastr']);
+    .module('dreamactionLanding', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'ui.bootstrap', 'toastr', 'mailchimp']);
 
 })();

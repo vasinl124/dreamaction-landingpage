@@ -47,16 +47,17 @@ html, body {
 }
 
 .main-row {
-	padding-bottom: 30px;
+	// padding-bottom: 30px;
 	height:100%;
   min-height:100%;
-	background: url('../assets/images/coverbw.jpg') no-repeat center center;
+	background: url('../assets/images/stairs_board.jpg') no-repeat center center;
 	background-size: cover;
 	color: white;
 	box-shadow: 0px 9px 22px 3px rgba(0,0,0,0.27);
 }
 
 .question-col {
+	background-color: rgba(0,0,0,0.6);
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-family: 'rsu regular';
@@ -67,14 +68,41 @@ html, body {
 
 	h4 {
 		font-family: 'rsu light';
+		line-height: 25px;
 	}
 	p { 
-		font-family: 'Arimo', sans-serif;
+		padding-top: 2px;
+		// font-family: 'Arimo', sans-serif;
+		font-family: 'rsu light';
 		letter-spacing: 2px;	
 	}
+	.show-result {
+		margin: 10px;
+		padding: 10px;
+		font-family: 'Arimo', sans-serif;
+		letter-spacing: 0px;	
+	}
+	.show-error {
+		background-color: #FF2E42;
+		a {
+			text-decoration: underline;
+			color: #E6E6E6;
+
+		}
+	}
+
+	.show-success {
+		background-color: #2DBB7F;
+	}
+
+}
+
+.form-control {
+	margin-bottom: 5px;
 }
 .reason-row {
-	background-color: gray;
+	font-family: 'rsu regular';
+	background-color: #747474;
 	background-size: cover;
 	padding: 40px;
 	.row-title {
@@ -84,28 +112,31 @@ html, body {
 		color: white;
 	}
 	.caption {
-		// padding: 100px;
-		padding-top: 40px;
-		.caption-title {
-			font-size: 150px;
-			text-transform: uppercase;
-		}
+		padding-top: 0px;
+		// font-size: 17px;
+		letter-spacing: 2px;
+	}
+	.img-responsive {
+    margin: 0 auto;
 	}
 }
 
 .highlight-row {
+	
 	padding:20px;
 	background-color: black;
 	color:white;
 	.col {
 		img {
 			padding: 15px;
+			width: 100px;
 		}
 	}
 }
 .testimonial-row {
+	font-family: 'rsu regular';
 	// box-shadow: inset 0px 11px 26px -8px rgba(0,0,0,1);
-	padding: 40px;
+	padding: 20px;
 	.row-title {
 		padding-bottom: 20px;
 	}
@@ -119,23 +150,44 @@ html, body {
 		height: 50px;
 	}
 	.caption {
-		padding: 40px;
 		padding-top: 20px;
+		font-size: 17px;
+		letter-spacing: 2px;
+	}
+	h4 {
+		padding-top: 15px;
+	}
+	p { 
+		// font-family: 'Arimo', sans-serif;
+		font-family: 'rsu light';
+		letter-spacing: 2px;	
 	}
 }
 
 .slideshow-row {
-	height: 400px;
-	// box-shadow: inset 2px 43px 300px 63px rgba(0,0,0,0.75);
-	background: url('../assets/images/jom/a4.jpg') no-repeat center center;
+	height: 500px;
+	box-shadow: inset 2px 43px 300px 63px rgba(0,0,0,0.75);
+	background: url('../assets/images/stairs-white_board.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	.subscribe-box {
+		background-color: rgba(0,0,0,0.8);
+		padding: 20px;
+		margin-bottom: 0px;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		h4, p {
+		h2, h4, p {
 			color: white;
+		}
+		h2, h4 {
+			font-family: 'rsu regular';
+		}
+		p { 
+			padding-top: 10px;
+			// font-family: 'Arimo', sans-serif;
+			font-family: 'rsu light';
+			letter-spacing: 2px;	
 		}
 	}
 }
@@ -144,11 +196,42 @@ html, body {
 	color: white;
 	padding-top: 14px;
 	padding-bottom: 30px;
+	a {
+		color: white;
+		font-family: 'Arimo', sans-serif;
+	}
 }
 
 .copyright {
 	background-color: black;
 	color: lightgray;
 	font-size: 12px;
+	img {
+		height: 75px;
+	}
 }
 
+//////////////////////////////
+@media screen and (max-width: 768px) {
+  .question-col {
+  	padding-top: 5px;
+  	h1 {
+  		font-size: 25px;
+  	}
+  	h4 {
+			font-size: 15px;
+		}
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question-col {
+  	padding-top: 10px;
+  	h1 {
+  		font-size: 20px;
+  	}
+  	h4 {
+			font-size: 15px;
+		}
+  }
+}

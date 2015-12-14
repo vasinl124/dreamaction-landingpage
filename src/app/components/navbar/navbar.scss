@@ -6,3 +6,40 @@
 		font-family: 'Arimo', sans-serif;
 	}
 }
+
+
+.nav-logo {
+	display: inline;
+	height: 65px;
+	position: relative;
+	top: -17px;
+}
+
+.nav-logo-text {
+	padding-left: 2px;
+	display: inline;
+	position: relative;
+	top: -19px;
+}
+
+.collapse-icon {
+	font-size: 30px;
+}
+.navbar-collapse {
+	text-align: center;
+	ul {
+		background-color: black;
+	}
+}
+.navbar-right {
+	position: relative;
+	top: 6px !important;
+
+	a:hover {
+		color: black !important;
+	}
+}
+
+.icon-bar {
+	color:white;
+}

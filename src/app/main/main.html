@@ -6,12 +6,12 @@
 
     <div class='col-md-12 question-col text-center'>
     
-      <h1>เคยมีคำถามเหล่านี้ในใจไหม?</h1>
+      <h1 class='testtest'>เคยมีคำถามเหล่านี้ในใจไหม?</h1>
       
       <acme-malarkey extra-values="[
-        'ทำพอร์ทยังไงให้น่าสนใจ และเจ๋ง', 
-        'เตรียมตัวสมัครงานยังไงให้ได้งานที่อยากได้?',
-        'ทำงานสถาปัตยกรรมในแต่ละประเทศ ต่างกันยังไง'
+        'ทำพอร์ทยังไงให้น่าสนใจและเจ๋ง', 
+        'เตรียมตัวสมัครงานยังไงให้ได้งานที่อยากได้',
+        'สถาปนิกในแต่ละประเทศทำงานต่างกันยังไง'
         ]"></acme-malarkey>
       <div class='row'>
         <div class='col-md-8 col-md-offset-2'>
@@ -19,26 +19,43 @@
         </div>
       
         <div class='col-md-6 col-md-offset-3'>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="E-mail Address">
-            <span class="input-group-btn">
-              <button class="btn btn-success btn-lg" type="button">สมัครสมาชิก</button>
-            </span>
-          </div><!-- /input-group -->    
+          <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+            <div ng-hide="mailchimp.result === 'success'">
+              <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
+              <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
+              <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='b1987670b8f559efd418e7d79'">
+              <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='36c38f0ba3'">
+
+              <input type="email" name="email" class="form-control" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
+              <button class="btn btn-success btn-block" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">สมัครสมาชิก</button>
+            </div>
+            
+            <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+            <div class='show-result show-error' ng-show="mailchimp.result === 'error'" ng-cloak>
+              <span ng-bind-html="mailchimp.errorMessage"></span>
+            </div>
+
+
+            <!-- Show success message if MailChimp returned successfully. -->
+            <div class='show-result show-success' ng-show="mailchimp.result === 'success'" ng-cloak>
+              <span ng-bind-html="mailchimp.successMessage"></span>
+            </div>  
+
+          </form>
         </div>
       </div>
-      
-
 
       <p>** สมัครสมาชิกวันนี้รับ Portfolio guideline ฟรี!!</p>
-      <img src="http://placehold.it/350x150" alt="">
+      <!-- <img src="http://placehold.it/350x150" alt=""> -->
     </div>
   </div>
   <div class="row reason-row">
-    <h1 class='text-center row-title'>ทำไมต้อง Dream Action ?</h1>
-    <div class="col-sm-6 col-md-4">
+    <div class='col col-sm-12'>
+      <h1 class='text-center row-title'>ทำไมต้อง Dream Action ?</h1>  
+    </div>
+    <div class="col col-xs-12 col-sm-4">
       <div class="text-center">
-        <img src="http://placehold.it/400x300" alt="">
+        <img src="assets/images/reason/360what-01.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
             Dream.Action เป็นบล๊อคที่ สร้างมาเพื่อเป็นแหล่งข้อมูลที่ ช่วยแนะนำและสนับสนุนพลังความฝัน ของนักออกแบบที่กำลังวางแผนอาชีพ และ หางานในสายสถาปัตกรรม
@@ -47,9 +64,9 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col col-xs-12 col-sm-4">
       <div class="text-center">
-        <img src="http://placehold.it/400x300" alt="">
+        <img src="assets/images/reason/360WHO-01.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
             blogนี้เหมาะสำหรับ สถาปนิกรุ่นใหม่ หรือ นักออกแบบจบใหม่ ที่กำลังจะเรียนจบออกไปทำงานสายนี้ หรือ กำลังจะเปลี่ยนงานใหม่
@@ -57,9 +74,9 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+    <div class="col col-xs-12 col-sm-4">
       <div class="text-center">
-        <img src="http://placehold.it/400x300" alt="">
+        <img src="assets/images/reason/360HOW-01.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
             โดยการรวมรวมแนวทาง และ คำแนะนำในการวางแผนสมัครงาน วางแผนอาชีพในสายออกแบบ เกร็ดความรู้เกี่ยวกับการทำงานสถาปัตย์ในที่ต่างๆ สิ่งที่อยากบอก คือ อยากบอกว่าเราทุกคน มีดี มีพลัง และหากเราอยากจะทำ เราดึงศักยภาพของเราออกมาได้ เราสามารถไปในที่ที่เราอยากไปได้อย่างไม่มีที่สิ้นสุด
@@ -70,16 +87,23 @@
   </div>
   <div class='row text-center highlight-row'>
     <div  class='col col-md-12'>
-      <img src="http://placehold.it/100x100" alt="">
-      <img src="http://placehold.it/100x100" alt="">
-      <img src="http://placehold.it/100x100" alt="">
-      <img src="http://placehold.it/100x100" alt="">
-      <img src="http://placehold.it/100x100" alt="">
-      <img src="http://placehold.it/100x100" alt="">
+      <img class="img-circle" src="assets/images/highlights/1IDEA.png" alt="">
+      <img class="img-circle" src="assets/images/highlights/2skillreferenceDSGN.png" alt="">
+      <img class="img-circle" src="assets/images/highlights/3interview.png" alt="">
+      <img class="img-circle" src="assets/images/highlights/4psd.jpg" alt="">
+      <img class="img-circle" src="assets/images/highlights/5AI.jpg" alt="">
+      <img class="img-circle" src="assets/images/highlights/6ID.jpg" alt="">
+      <img class="img-circle" src="assets/images/highlights/7skillreferenceCAD.png" alt="">
+      <img class="img-circle" src="assets/images/highlights/8skillreferenceCIVIL3D.png" alt="">
+      <img class="img-circle" src="assets/images/highlights/9skillreferenceMAX.png" alt="">
     </div>
     <div class='col col-md-12'>
-      This blog includes these...askdfjlasdkf
+      <h5>เกร็ดความรู้ และทักษะที่จะนำเสนอในบล็อคนี้</h5>
     </div>
+  </div>
+  <div class='row text-center'>
+    <div class="col col-md-6"><h1>รูป ๆๆๆๆ</h1></div>
+    <div class="col col-md-6"><h1>About Jom</h1></div>
   </div>
   <div class="row testimonial-row">
     <h1 class='text-center row-title'>คำนิยม</h1>
@@ -135,36 +159,60 @@
   </div>
 
   <div class='row slideshow-row'>
-    <div class='col-md-8 col-md-offset-2 subscribe-box text-center'>
-      <img src="http://placehold.it/350x150" alt="">
-      <div class="input-group input-group-lg">
-        <input type="text" class="form-control" placeholder="E-mail Address">
-        <span class="input-group-btn">
-          <button class="btn btn-success btn-lg" type="button">สมัครสมาชิก</button>
-        </span>
-      </div><!-- /input-group -->  
+    <div class='col-sm-8 col-xs-12 col-sm-offset-2 subscribe-box text-center'>
+      <!-- <img  src="http://placehold.it/350x150" alt=""> -->
+      <h2>อย่ารอช้า สมัครเลย !!</h2>
+      <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+        <div ng-hide="mailchimp.result === 'success'">
+          <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
+          <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
+          <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='b1987670b8f559efd418e7d79'">
+          <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='36c38f0ba3'">
+
+          <input type="email" name="email" class="form-control" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
+          <button class="btn btn-success btn-block" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">สมัครสมาชิก</button>
+        </div>
+
+        <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+        <div ng-show="mailchimp.result === 'error'" ng-cloak>
+          <span ng-bind-html="mailchimp.errorMessage"></span>
+        </div>
+
+        <!-- Show success message if MailChimp returned successfully. -->
+        <div ng-show="mailchimp.result === 'success'" ng-cloak>
+          <span ng-bind-html="mailchimp.successMessage"></span>
+        </div>
+      </form>
+
       <p>** สมัครสมาชิกวันนี้รับ Portfolio guideline ฟรี!!</p>
-      <img src="http://placehold.it/350x150" alt="">
+      <!-- <img src="http://placehold.it/350x150" alt=""> -->
     </div>
     
   </div>
   <!-- Footer -->
   <div class='row footer'>
-    <div class='col-md-4'>
-      DREAM.ACTION
+    <div class='text-center'>
+      <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><small>e-mail</small></a>  
+      |
+      <a href="http://facebook.com/thedreamaction" target="_top"><small>facebook</small></a>  
+      |
+      <a href="http://blog.dreamaction.co" target="_top"><small>blog</small></a>  
+      |
+      <a href="http://blog.dreamaction.co/aboutme/" target="_top"><small>about</small></a>  
     </div>
-    <div class='col-md-4 text-center'>
-      <p>E-mail: xxxx@dreamaction.co</p>
-    </div>
-    <div class='col-md-4 text-right'>
-      <span class="glyphicon glyphicon-search" aria-hidden="true">facebook</span>
-      Blog
-      About
-    </div>
+    
+    <!-- <acme-navbar></acme-navbar>     -->
+    
   </div>
   <div class='row text-center copyright'>
-    <div><img src="http://placehold.it/40x40" alt=""></div>
-    <div class='col-md-12 text-center'><p><small>DREAM.ACTION © 2015</small></p></div>
+    <div class='col-md-12 text-center'>
+      
+      <img src="assets/images/DAlogo_logo.png" alt="">
+    </div>
+    <div class='col-md-12 text-center'>
+
+      <p><small>DREAM.ACTION © 2015</small></p>
+    </div>
   </div>
 
 </div>
