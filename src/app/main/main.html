@@ -5,7 +5,6 @@
     <acme-navbar></acme-navbar>
 
     <div class='col-md-12 question-col text-center'>
-    
       <h1 class='animated main-question-title'>เคยมีคำถามเหล่านี้ในใจไหม?</h1>
 
       <acme-malarkey extra-values="[
@@ -14,12 +13,12 @@
         'สถาปนิกในแต่ละประเทศทำงานต่างกันยังไง'
         ]"></acme-malarkey>
       <div class='row'>
-        <div class='col-md-8 col-md-offset-2'>
+        <div class='col-md-8 col-md-offset-2 wow fadeIn'>
           <h4>สมัครสมาชิกด้านล่างสิ ทุกๆ 2 วัน น้องๆจะได้รับเคล็ดลับ เกล็ด แบบเผยทุกวิธีที่จะทำให้น้องๆเก่งขึ้นและทำให้น้องๆประสบความสำเร็จในวิชาชีพที่น้อง ๆ วาดฝันไว้</h4>
         </div>
       
         <div class='col-md-6 col-md-offset-3'>
-          <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+          <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow wobble'>
             <div ng-hide="mailchimp.result === 'success'">
               <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
               <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
@@ -45,31 +44,31 @@
         </div>
       </div>
 
-      <p>** สมัครสมาชิกวันนี้รับ Portfolio guideline ฟรี!!</p>
+      <p class='wow fadeIn'>** สมัครสมาชิกวันนี้รับ Portfolio guideline ฟรี!!</p>
       <!-- <img src="http://placehold.it/350x150" alt=""> -->
     </div>
   </div>
   <div class="row reason-row">
     <div class='col col-sm-12'>
-      <h1 class='text-center row-title'>ทำไมต้อง Dream Action ?</h1>  
+      <h1 class='text-center row-title wow fadeIn'>ทำไมต้อง DREAM ACTION ?</h1>  
     </div>
     <div class="col col-xs-12 col-sm-4">
-      <div class="text-center">
+      <div class='text-center wow bounceInUp' data-wow-delay='0.2s'>
         <div >
-          <img src="assets/images/reason/360what-01.png" alt="" class='img-responsive'>  
+          <img src="assets/images/reason/geo-what_SK8.png" alt="" class='img-responsive'>  
         </div>
         
         <div class="caption">
           <p>
-            Dream.Action เป็นบล๊อคที่ สร้างมาเพื่อเป็นแหล่งข้อมูลที่ ช่วยแนะนำและสนับสนุนพลังความฝัน ของนักออกแบบที่กำลังวางแผนอาชีพ และ หางานในสายสถาปัตกรรม
+            DREAM ACTION เป็นบล๊อคที่ สร้างมาเพื่อเป็นแหล่งข้อมูลที่ ช่วยแนะนำและสนับสนุนพลังความฝัน ของนักออกแบบที่กำลังวางแผนอาชีพ และ หางานในสายสถาปัตกรรม
           </p>
 
         </div>
       </div>
     </div>
     <div class="col col-xs-12 col-sm-4">
-      <div class="text-center">
-        <img src="assets/images/reason/360WHO-01.png" alt="" class='img-responsive'>
+      <div class='text-center wow bounceInUp' data-wow-delay='0.3s'>
+        <img src="assets/images/reason/geo-who_SK8.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
             blogนี้เหมาะสำหรับ สถาปนิกรุ่นใหม่ หรือ นักออกแบบจบใหม่ ที่กำลังจะเรียนจบออกไปทำงานสายนี้ หรือ กำลังจะเปลี่ยนงานใหม่
@@ -78,8 +77,8 @@
       </div>
     </div>
     <div class="col col-xs-12 col-sm-4">
-      <div class="text-center">
-        <img src="assets/images/reason/360HOW-01.png" alt="" class='img-responsive'>
+      <div class='text-center wow bounceInUp' data-wow-delay='0.4s'>
+        <img src="assets/images/reason/geo-how_SK8.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
             โดยการรวมรวมแนวทาง และ คำแนะนำในการวางแผนสมัครงาน วางแผนอาชีพในสายออกแบบ เกร็ดความรู้เกี่ยวกับการทำงานสถาปัตย์ในที่ต่างๆ สิ่งที่อยากบอก คือ อยากบอกว่าเราทุกคน มีดี มีพลัง และหากเราอยากจะทำ เราดึงศักยภาพของเราออกมาได้ เราสามารถไปในที่ที่เราอยากไปได้อย่างไม่มีที่สิ้นสุด
@@ -90,36 +89,38 @@
   </div>
   <div class='row text-center highlight-row'>
     <div  class='col col-md-12'>
-      <img class="img-circle" src="assets/images/highlights/1IDEA.png" alt="">
-      <img class="img-circle" src="assets/images/highlights/2skillreferenceDSGN.png" alt="">
-      <img class="img-circle" src="assets/images/highlights/3interview.png" alt="">
-      <img class="img-circle" src="assets/images/highlights/4psd.jpg" alt="">
-      <img class="img-circle" src="assets/images/highlights/5AI.jpg" alt="">
-      <img class="img-circle" src="assets/images/highlights/6ID.jpg" alt="">
-      <img class="img-circle" src="assets/images/highlights/7skillreferenceCAD.png" alt="">
-      <img class="img-circle" src="assets/images/highlights/8skillreferenceCIVIL3D.png" alt="">
-      <img class="img-circle" src="assets/images/highlights/9skillreferenceMAX.png" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.3s' src="assets/images/highlights/1IDEA.png" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.4s' src="assets/images/highlights/2skillreferenceDSGN.png" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.5s' src="assets/images/highlights/3interview.png" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.6s' src="assets/images/highlights/4psd.jpg" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.7s' src="assets/images/highlights/5AI.jpg" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.8s' src="assets/images/highlights/6ID.jpg" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='0.9s' src="assets/images/highlights/7skillreferenceCAD.png" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='1s' src="assets/images/highlights/8skillreferenceCIVIL3D.png" alt="">
+      <img class='img-circle wow bounceInUp' data-wow-delay='1.1s' src="assets/images/highlights/9skillreferenceMAX.png" alt="">
     </div>
-    <div class='col col-md-12'>
+    <div class='col col-md-12 wow fadeIn'>
       <h5>เกร็ดความรู้ และทักษะที่จะนำเสนอในบล็อคนี้</h5>
     </div>
   </div>
   <div class='row jomself-row'>
-    <div class="col col-md-4">
+    <div class="col col-xs-5">
       <img class="img-responsive" ng-src="assets/images/jom/jomphoto4.jpg" alt="">
     </div>
-    <div class="col col-md-4 col-sm-offset-2">
-      <h1>Jom</h1>
-      <h2>asdfjafasldjflsakdfjlk</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellendus nihil dolores, numquam facere saepe ipsam nam quibusdam quod vero impedit error iste magni. Tempora deserunt doloremque debitis quibusdam aperiam!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellendus nihil dolores, numquam facere saepe ipsam nam quibusdam quod vero impedit error iste magni. Tempora deserunt doloremque debitis quibusdam aperiam!
-      </p>
+    <div class="col col-xs-4">
+      <div>
+        <h1>Jom</h1>
+        <h2>asdfjafasldjflsakdfjlk</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellendus nihil dolores, numquam facere saepe ipsam nam quibusdam quod vero impedit error iste magni. Tempora deserunt doloremque debitis quibusdam aperiam!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellendus nihil dolores, numquam facere saepe ipsam nam quibusdam quod vero impedit error iste magni. Tempora deserunt doloremque debitis quibusdam aperiam!
+        </p>
+      </div>
     </div>
   </div>
   <div class="row testimonial-row">
-    <h1 class='text-center row-title'>คำนิยม</h1>
-    <div class="col-sm-6 col-md-3 text-center">
+    <h1 class='text-center row-title wow fadeIn'>คำนิยม</h1>
+    <div class='col-sm-6 col-md-3 text-center wow bounceInUp' data-wow-delay='0.2s'>
       <div>
         <img class="img-circle" ng-src="assets/images/jj.jpg" alt="">
       </div>
@@ -131,7 +132,7 @@
         <p>position</p>
       </div>
     </div>
-    <div class="col-sm-6 col-md-3 text-center">
+   <div class='col-sm-6 col-md-3 text-center wow bounceInUp' data-wow-delay='0.3s'>
       <div>
         <img class="img-circle" ng-src="assets/images/jj.jpg" alt="">
       </div>
@@ -146,7 +147,7 @@
         
       </div>
     </div>
-    <div class="col-sm-6 col-md-3 text-center">
+    <div class='col-sm-6 col-md-3 text-center wow bounceInUp' data-wow-delay='0.4s'>
       <div>
         <img class="img-circle" ng-src="assets/images/jj.jpg" alt="">
       </div>
@@ -157,7 +158,7 @@
         <p>position</p>
       </div>
     </div>
-    <div class="col-sm-6 col-md-3 text-center">
+    <div class='col-sm-6 col-md-3 text-center wow bounceInUp' data-wow-delay='0.5s'>
       <div>
         <img class="img-circle" ng-src="assets/images/jj.jpg" alt="">
       </div>
@@ -173,8 +174,8 @@
   <div class='row slideshow-row'>
     <div class='col-sm-8 col-xs-12 col-sm-offset-2 subscribe-box text-center'>
       <!-- <img  src="http://placehold.it/350x150" alt=""> -->
-      <h2>อย่ารอช้า สมัครเลย !!</h2>
-      <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+      <h2 class='wow bounceInDown'>อย่ารอช้า สมัครเลย !!</h2>
+      <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow wobble'>
         <div ng-hide="mailchimp.result === 'success'">
           <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
           <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
@@ -212,9 +213,6 @@
       |
       <a href="http://blog.dreamaction.co/aboutme/" target="_top"><small>about</small></a>  
     </div>
-    
-    <!-- <acme-navbar></acme-navbar>     -->
-    
   </div>
   <div class='row text-center copyright'>
     <div class='col-md-12 text-center'>

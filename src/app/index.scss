@@ -46,17 +46,26 @@ html, body {
 	}
 }
 
+.main-container {
+	height: 100%;
+}
+
 .main-row {
-	// padding-bottom: 30px;
 	height:100%;
   min-height:100%;
 	background: url('../assets/images/stairs_board.jpg') no-repeat center center;
 	background-size: cover;
 	color: white;
 	box-shadow: 0px 9px 22px 3px rgba(0,0,0,0.27);
+	position: relative;
+	z-index: 10;
 }
 
 .question-col {
+	// height:80%;
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 	background-color: rgba(0,0,0,0.6);
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -101,6 +110,8 @@ html, body {
 	margin-bottom: 5px;
 }
 .reason-row {
+	position: relative;
+	box-shadow: 0px 9px 22px 3px rgba(0,0,0,0.4);
 	font-family: 'rsu regular';
 	background-color: #747474;
 	background-size: cover;
@@ -124,8 +135,8 @@ html, body {
 .highlight-row {
 	
 	padding:20px;
-	background-color: black;
-	color:white;
+	background-color: lightgray;
+	color:black;
 	.col {
 		img {
 			padding: 15px;
@@ -135,17 +146,41 @@ html, body {
 }
 
 .jomself-row {
-	background-color: gray;
-
-	img {
-		height: 700px;
+	height: 100%;
+	background: url('../assets/images/stairs_board.jpg') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	.col {
+		padding: 0px;
+		height: 100%;
+		display: table-cell;
+		position:relative;
+		img {
+			max-width: auto;
+			max-height: 100%;
+	    position:absolute;
+	    bottom: 0px;
+		}
+		div {
+			padding: 40px;
+			// border: red solid 1px;
+			position: absolute;
+		  top: 50%;
+		  transform: translateY(-50%);
+		}
 	}
+	
+
 	h1 {
-		font-size: 100px;
+		font-size: 150px;
 		text-transform: uppercase;
+		color: white;
 	}
 	h2 {
-		color: blue;
+		color: #46B4EF;
+	}
+	p {
+		color: white;
 	}
 }
 .testimonial-row {
