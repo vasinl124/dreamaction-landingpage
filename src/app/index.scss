@@ -50,12 +50,16 @@ html, body {
 	height: 100%;
 }
 
+acme-navbar {
+	z-index: 20;
+}
+
 .main-row {
   min-height:100%;
   position: relative;
 	background: url('../assets/images/stairs_board.jpg') no-repeat center center;
 	background-size: cover;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	color: white;
 	box-shadow: 0px 9px 22px 3px rgba(0,0,0,0.27);
 	z-index: 10;
@@ -85,29 +89,30 @@ html, body {
 		font-family: 'rsu light';
 		letter-spacing: 2px;	
 	}
-	.show-result {
-		margin: 10px;
-		padding: 10px;
-		font-family: 'Arimo', sans-serif;
-		letter-spacing: 0px;	
-	}
-	.show-error {
-		background-color: #FF2E42;
-		a {
-			text-decoration: underline;
-			color: #E6E6E6;
+}
 
-		}
-	}
+// subscribe result
+.show-result {
+	margin: 10px;
+	padding: 10px;
+	font-family: 'Arimo', sans-serif;
+	letter-spacing: 0px;	
+}
+.show-error {
+	background-color: #FF2E42;
+	a {
+		text-decoration: underline;
+		color: #E6E6E6;
 
-	.show-success {
-		background-color: #2DBB7F;
 	}
+}
 
+.show-success {
+	background-color: #2DBB7F;
 }
 
 .form-control {
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 }
 .reason-row {
 	position: relative;
@@ -124,8 +129,18 @@ html, body {
 	}
 	.caption {
 		padding-top: 0px;
-		// font-size: 17px;
+		font-size: 17px;
 		letter-spacing: 2px;
+		p{
+			text-align: left;
+			line-height: 24px;
+		}
+		span {
+			// background-color: #F1991D;
+			background-color: black;
+			color: white;
+			padding: 0px 4px;
+		}
 	}
 	.img-responsive {
     margin: 0 auto;
@@ -274,8 +289,22 @@ html, body {
 }
 
 //////////////////////////////
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 979px) {
+	.question-col {
+		margin-top: 20px;
+		padding-top: 0px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.main-row {
+  	min-height: auto;
+  	position: static;
+  }
   .question-col {
+  	position: static;
+	  top: 0%;
+	  transform: translateY(0%);
+	  margin-top: 0px;
   	padding-top: 5px;
   	h1 {
   		font-size: 25px;
@@ -287,15 +316,7 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
-	.main-row {
-  	min-height:auto;
-  	position: static;
-  }
-	
   .question-col {
-  	position: static;
-	  top: 0%;
-	  transform: translateY(0%);
   	padding-top: 10px;
   	h1 {
   		font-size: 20px;

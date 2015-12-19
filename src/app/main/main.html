@@ -5,38 +5,43 @@
     <acme-navbar></acme-navbar>
 
     <div class='col-md-12 question-col text-center'>
-      <h1 class='animated main-question-title'>เคยมีคำถามเหล่านี้ในใจไหม?</h1>
+      <h1 class='animated main-question-title'>
+        เคยสงสัยมั้ยว่า
+      </h1>
 
       <acme-malarkey extra-values="[
-        'ทำพอร์ทยังไงให้น่าสนใจและเจ๋ง', 
-        'เตรียมตัวสมัครงานยังไงให้ได้งานที่อยากได้',
-        'สถาปนิกในแต่ละประเทศทำงานต่างกันยังไง'
+        'ทำพอร์ทยังไงให้เจ๋ง โดนใจ ได้งานชัวร์?', 
+        'เตรียมตัวสมัครงานยังไงให้ได้งานที่ฝัน?',
+        'เรียนจบละ ไงต่อดี?', 
+        'ทำงานสถาปัตย์ในแต่ละประเทศ..ต่างกันยังไง?'
         ]"></acme-malarkey>
       <div class='row'>
         <div class='col-md-8 col-md-offset-2 wow fadeIn'>
-          <h4>สมัครสมาชิกด้านล่างสิ ทุกๆ 2 วัน น้องๆจะได้รับเคล็ดลับ เกล็ด แบบเผยทุกวิธีที่จะทำให้น้องๆเก่งขึ้นและทำให้น้องๆประสบความสำเร็จในวิชาชีพที่น้อง ๆ วาดฝันไว้</h4>
+          <h4>
+            สมัครสมาชิก พร้อมรับเคล็ดลับในการพัฒนาฝีมือ มุ่งหน้าสู่ความสำเร็จตามความฝันในวิชาชีพออกแบบ และ อัพเดทแรงบันดาลใจรายสัปดาห์ ..แบบฟรี!! ไม่คิดตังค์ แค่อยากให้คุณกล้าฝัน และคว้ามัน 
+          </h4>
         </div>
       
         <div class='col-md-6 col-md-offset-3'>
-          <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow wobble'>
+          <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow fadeInUp'>
             <div ng-hide="mailchimp.result === 'success'">
               <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
               <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
               <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='b1987670b8f559efd418e7d79'">
               <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='36c38f0ba3'">
-
-              <input type="email" name="email" class="form-control" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
-              <button class="btn btn-success btn-block" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">สมัครสมาชิก</button>
+              
+              <input type="email" name="email" class="form-control text-center input-lg" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
+              <button class="btn btn-success btn-block btn-lg" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)" analytics-on="click" analytics-event="subscribe">สมัครสมาชิก</button>
             </div>
             
             <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
-            <div class='show-result show-error' ng-show="mailchimp.result === 'error'" ng-cloak>
+            <div class='show-result show-error wow fadeIn' ng-show="mailchimp.result === 'error'" ng-cloak>
               <span ng-bind-html="mailchimp.errorMessage"></span>
             </div>
 
 
             <!-- Show success message if MailChimp returned successfully. -->
-            <div class='show-result show-success' ng-show="mailchimp.result === 'success'" ng-cloak>
+            <div class='show-result show-success wow fadeIn' ng-show="mailchimp.result === 'success'" ng-cloak>
               <span ng-bind-html="mailchimp.successMessage"></span>
             </div>  
 
@@ -44,7 +49,7 @@
         </div>
       </div>
 
-      <p class='wow fadeIn'>** สมัครสมาชิกวันนี้รับ Portfolio guideline ฟรี!!</p>
+      <p class='wow fadeIn'>** สมัครสมาชิกวันนี้ รับ ชุดคิท สำหรับทำพอร์ทโฟลิโอนักออกแบบ (Portfolio Tools Kit for Designer!) ฟรี!!</p>
       <!-- <img src="http://placehold.it/350x150" alt=""> -->
     </div>
   </div>
@@ -60,7 +65,13 @@
         
         <div class="caption">
           <p>
-            DREAM ACTION เป็นบล๊อคที่ สร้างมาเพื่อเป็นแหล่งข้อมูลที่ ช่วยแนะนำและสนับสนุนพลังความฝัน ของนักออกแบบที่กำลังวางแผนอาชีพ และ หางานในสายสถาปัตกรรม
+            DREAM ACTION เป็นบล๊อคที่ สร้างมาเพื่อ..
+          </p>
+          <p>
+            <span>RESOURCE / SUPPORT</span> เป็นแหล่งข้อมูล ที่แชร์ประสบการณ์ ความรู้ที่ ช่วยสนับสนุนนักออกแบบ 
+          </p>
+          <p>
+            <span>DARE TO DREAM, THAI DESIGNER</span> เติมพลังใจให้กล้าฝัน เพราะเราทำได้ มา! ไปด้วยกัน!! <span>LET’S GO!</span>
           </p>
 
         </div>
@@ -71,7 +82,12 @@
         <img src="assets/images/reason/geo-who_SK8.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
-            blogนี้เหมาะสำหรับ สถาปนิกรุ่นใหม่ หรือ นักออกแบบจบใหม่ ที่กำลังจะเรียนจบออกไปทำงานสายนี้ หรือ กำลังจะเปลี่ยนงานใหม่
+            <span>LANDSCAPE / ARCHITECT / DESIGNER</span> เหมาะกับ สถาปนิก และ นักออกแบบรุ่นใหม่  
+            ADVANCEMENT ที่กำลังจะเรียนจบออกไปทำงานในสาย หาวิธีพัฒนาตัวเองใหม่ๆ หรือ หาแรงบันดาลใจ    
+          </p>
+          <p>    
+            <span> FOR DESIGNER BY DESIGNER </span>
+            ถ้าคุณมีความฝัน และอยากทำงานด้านออกแบบ / ภูมิสถาปัตย์ และใกล้เคียง เวบนี้จะเป็นประโยชน์มาก เพราะมันสร้างมา "เพื่อคุณ" จาก นักออกแบบ “แบบคุณ”
           </p>
         </div>
       </div>
@@ -81,7 +97,13 @@
         <img src="assets/images/reason/geo-how_SK8.png" alt="" class='img-responsive'>
         <div class="caption">
           <p>
-            โดยการรวมรวมแนวทาง และ คำแนะนำในการวางแผนสมัครงาน วางแผนอาชีพในสายออกแบบ เกร็ดความรู้เกี่ยวกับการทำงานสถาปัตย์ในที่ต่างๆ สิ่งที่อยากบอก คือ อยากบอกว่าเราทุกคน มีดี มีพลัง และหากเราอยากจะทำ เราดึงศักยภาพของเราออกมาได้ เราสามารถไปในที่ที่เราอยากไปได้อย่างไม่มีที่สิ้นสุด
+            <span>COLLECT/SHARE</span>  รวบรวม และ ส่งต่อ เกร็ดความรู้ ในการสมัครงาน ทักษะที่จำเป็น และ เรื่องในการทำงาน..ที่โรงเรียนออกแบบไม่ได้สอน
+          </p>
+          <p>
+            <span>UNLEASH</span> ดึงศักยภาพในตัวพวกเราออกมา แล้วเราจะสามารถไปในที่ที่เราอยากไปได้อย่างไม่มีที่สิ้นสุด
+          </p>
+          <p>
+            <span>STRATEGIZE</span> สร้างกลยุทธ ในการเดินไปคว้าโอกาส หรือ แม้แต่ รับมือกับการเปลี่ยนแปลงในชีวิตที่กำลังจะก้าวไปสู่บทต่อไป
           </p>
         </div>
       </div>
@@ -100,7 +122,7 @@
       <img class='img-circle wow bounceInUp' data-wow-delay='1.1s' src="assets/images/highlights/9skillreferenceMAX.png" alt="">
     </div>
     <div class='col col-md-12 wow fadeIn'>
-      <h5>เกร็ดความรู้ และทักษะที่จะนำเสนอในบล็อคนี้</h5>
+      <h5>ทักษะ และเครื่องมือ ที่จะนำเสนอในบล็อคนี้ | SKILLS + TOOLS TO BE DISCUSSED IN THIS BLOG</h5>
     </div>
   </div>
   <div class='row jomself-row'>
@@ -132,8 +154,8 @@
         <p>Founder & Entrepreneur</p>
         
         <p>
-          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ วงการออกแบบ นอกจากนี้เธอยังทำงานในประเทศอเมริกา ใช้ชีวิตแบบที่หลายๆคนใฝ่ฝันด้วยเธอจึงสามารถเป็นโค้ชที่ดีได้ ถ้าคุณต้องการตัวอย่าง iron maiden ผู้หญิงตั้งตัวในอเมริกา ทำได้จริงชัวร์ ประสบความสำเร็จจริงให้เห็นในการทำงานบริษัทออกแบบชั้นนำของโลก จอมจะส่งให้คุณสำเร็จไปด้วยกัน
-
+          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ...
+          <span>read more</span>
         </p>
       </div>
     </div>
@@ -150,8 +172,8 @@
         <p>Founder & Entrepreneur</p>
         
         <p>
-          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ วงการออกแบบ นอกจากนี้เธอยังทำงานในประเทศอเมริกา ใช้ชีวิตแบบที่หลายๆคนใฝ่ฝันด้วยเธอจึงสามารถเป็นโค้ชที่ดีได้ ถ้าคุณต้องการตัวอย่าง iron maiden ผู้หญิงตั้งตัวในอเมริกา ทำได้จริงชัวร์ ประสบความสำเร็จจริงให้เห็นในการทำงานบริษัทออกแบบชั้นนำของโลก จอมจะส่งให้คุณสำเร็จไปด้วยกัน
-
+          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ...
+          <span>read more</span>
         </p>
         
       </div>
@@ -164,11 +186,15 @@
       <div class="caption">
         <h4>ศศิ(มุ่ย) ธนาดีโรจน์กุล</h4>
         <p>Founder & Entrepreneur</p>
-
+        
         <p>
+          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ...
+          <span>read more</span>
+        </p>
+        <!-- <p>
           จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ วงการออกแบบ นอกจากนี้เธอยังทำงานในประเทศอเมริกา ใช้ชีวิตแบบที่หลายๆคนใฝ่ฝันด้วยเธอจึงสามารถเป็นโค้ชที่ดีได้ ถ้าคุณต้องการตัวอย่าง iron maiden ผู้หญิงตั้งตัวในอเมริกา ทำได้จริงชัวร์ ประสบความสำเร็จจริงให้เห็นในการทำงานบริษัทออกแบบชั้นนำของโลก จอมจะส่งให้คุณสำเร็จไปด้วยกัน
 
-        </p>
+        </p> -->
       </div>
     </div>
     <div class='col-sm-6 col-md-3 text-center wow bounceInUp' data-wow-delay='0.5s'>
@@ -181,8 +207,8 @@
         <p>Founder & Entrepreneur</p>
         
         <p>
-          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ วงการออกแบบ นอกจากนี้เธอยังทำงานในประเทศอเมริกา ใช้ชีวิตแบบที่หลายๆคนใฝ่ฝันด้วยเธอจึงสามารถเป็นโค้ชที่ดีได้ ถ้าคุณต้องการตัวอย่าง iron maiden ผู้หญิงตั้งตัวในอเมริกา ทำได้จริงชัวร์ ประสบความสำเร็จจริงให้เห็นในการทำงานบริษัทออกแบบชั้นนำของโลก จอมจะส่งให้คุณสำเร็จไปด้วยกัน
-
+          จอมเป็นคนมีความสามารถ และมีความพยายามมากคนหนึ่ง และเธอยังได้ร่อนพอร์ท จนผ่านไปทำงานกับบริษัทชั้นนำมากมายในอเมริกา ความรู้ของจอมที่อัดแน่นเป็นการส่งต่อความเก่งสู่สาธารณะ...
+          <span>read more</span>
         </p>
       </div>
     </div>
@@ -191,30 +217,33 @@
   <div class='row slideshow-row'>
     <div class='col-sm-8 col-xs-12 col-sm-offset-2 subscribe-box text-center'>
       <!-- <img  src="http://placehold.it/350x150" alt=""> -->
-      <h2 class='wow bounceInDown'>อย่ารอช้า สมัครเลย !!</h2>
-      <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow wobble'>
+      <h2 class='wow bounceInDown'>
+        What are you waiting for? สมัครเลย!
+      </h2>
+      <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow fadeInUp'>
         <div ng-hide="mailchimp.result === 'success'">
           <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
           <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
           <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='b1987670b8f559efd418e7d79'">
           <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='36c38f0ba3'">
 
-          <input type="email" name="email" class="form-control" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
-          <button class="btn btn-success btn-block" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">สมัครสมาชิก</button>
+          <input type="email" name="email" class="form-control text-center input-lg" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
+          <button class="btn btn-success btn-block btn-lg" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">สมัครสมาชิก</button>
         </div>
 
         <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
-        <div ng-show="mailchimp.result === 'error'" ng-cloak>
+        <div class='show-result show-error wow fadeIn' ng-show="mailchimp.result === 'error'" ng-cloak>
           <span ng-bind-html="mailchimp.errorMessage"></span>
         </div>
 
+
         <!-- Show success message if MailChimp returned successfully. -->
-        <div ng-show="mailchimp.result === 'success'" ng-cloak>
+        <div class='show-result show-success wow fadeIn' ng-show="mailchimp.result === 'success'" ng-cloak>
           <span ng-bind-html="mailchimp.successMessage"></span>
-        </div>
+        </div>  
       </form>
 
-      <p>** สมัครสมาชิกวันนี้รับ Portfolio guideline ฟรี!!</p>
+      <p>** สมัครสมาชิกวันนี้ รับ ชุดคิท สำหรับทำพอร์ทโฟลิโอนักออกแบบ (Portfolio Tools Kit for Designer!) ฟรี!!</p>
       <!-- <img src="http://placehold.it/350x150" alt=""> -->
     </div>
     
