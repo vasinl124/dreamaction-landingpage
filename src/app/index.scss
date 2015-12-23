@@ -51,7 +51,6 @@ html, body {
 }
 
 acme-navbar {
-	z-index: 20;
 }
 
 .main-row {
@@ -161,31 +160,17 @@ acme-navbar {
 
 .jomself-row {
 	height: 600px;
-	// width: 100%;
-	background: url('../assets/images/aa.jpg') no-repeat;
+	background: url('../assets/images/jom/jjom2.png') no-repeat;
 	background-size: cover;
-	// background-position: center center;
-	background-position: center bottom;
-	border: red solid 1px;
-	// position: relative;
+	background-position: center center;
+	// background-position: center bottom;
+	// border: red solid 1px;
+	position: relative;
 	.col {
-		// padding: 0px;
-		// height: 100%;
-		// display: table-cell;
-		// position:relative;
-		img {
-			// max-width: auto;
-			// max-height: 100%;
-	    // position:absolute;
-	    bottom: 0px;
-		}
-		div {
-			// padding: 40px;
-			// border: red solid 1px;
-			// position: absolute;
-		  // top: 50%;
-		  // transform: translateY(-50%);
-		}
+		position: absolute;
+	  top: 50%;
+	  transform: translateY(-60%);
+	  background-color: rgba(0,0,0,0.7);
 	}
 	
 
@@ -266,6 +251,10 @@ acme-navbar {
 			font-family: 'rsu light';
 			letter-spacing: 2px;	
 		}
+
+		img {
+			width: 250px;
+		}
 	}
 }
 .footer {
@@ -294,6 +283,34 @@ acme-navbar {
 		margin-top: 20px;
 		padding-top: 0px;
 	}
+
+	.jomself-row {
+		// height: 600px;
+		// background: url('../assets/images/jom/jjom2.png') no-repeat;
+		// background-size: cover;
+		// background-position: center center;
+		// // background-position: center bottom;
+		// // border: red solid 1px;
+		// position: relative;
+		.col {
+			// position: absolute;
+		 //  top: 50%;
+		 //  transform: translateY(-60%);
+		 //  background-color: rgba(0,0,0,0.7);
+		}
+
+		h1 {
+			font-size: 120px;
+			text-transform: uppercase;
+			color: white;
+			// border: green solid 1px;
+			line-height: 100px;
+		}
+
+		h2 {
+			font-size: 28px;
+		}
+	}
 }
 @media screen and (max-width: 767px) {
 	.main-row {
@@ -313,6 +330,22 @@ acme-navbar {
 			font-size: 15px;
 		}
   }
+
+  .jomself-row {
+		height: 660px;
+		// background: url('../assets/images/jom/jjom2.png') no-repeat;
+		// background-size: cover;
+		// background-position: center center;
+		// // background-position: center bottom;
+		// // border: red solid 1px;
+		// position: relative;
+		.col {
+			position: absolute;
+		 	bottom: 0%;
+		  transform: translateY(0%);
+		  background-color: rgba(0,0,0,0.7);
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -325,4 +358,7 @@ acme-navbar {
 			font-size: 15px;
 		}
   }
+  .jomself-row {
+		height: 765px;
+	}
 }
