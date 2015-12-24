@@ -26,7 +26,47 @@
         </div>
       
         <div class='col-md-6 col-md-offset-3'>
-          <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow fadeInUp'>
+          <div id="mlb2-1496821" class="ml-subscribe-form">
+            <div class="ml-vertical-align-center">
+                <div class="subscribe-form ml-block-success" style="display:none">
+                    <div class="form-section show-result show-success  wow fadeIn">
+                        <h4>
+                        Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.
+                        </h4>
+                    </div>
+                </div>
+                <form class="ml-block-form" action="//app.mailerlite.com/webforms/submit/e9p3m6" data-code="e9p3m6" method="POST" target="_blank">
+                    <div class="subscribe-form wow fadeInUp">
+                        <div class="form-section">
+                            <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                                <input type="email" name="fields[email]" class="form-control text-center input-lg" placeholder="Email address" value="">
+                            </div>
+                        </div>
+                        <input type="hidden" name="ml-submit" value="1" />
+                        <button type="submit" class="primary gradient-on btn btn-success btn-block btn-lg">
+                            สมัครสมาชิก
+                        </button>
+                        <button disabled="disabled" style="display: none;" type="submit" class="loading gradient-on btn btn-success btn-block btn-lg">
+                            <img src="//static1.mailerlite.com/images/rolling.gif" width="20" height="20">
+                        </button>
+                        <p>** สมัครสมาชิกวันนี้ รับ ชุดคิท สำหรับทำพอร์ทโฟลิโอนักออกแบบ (Portfolio Tools Kit for Designer!) ฟรี!!</p>
+                        <img src="assets/images/kit/kitgraphic.png" alt="">
+                    </div>
+                </form>
+                <script>
+                    function ml_webform_success_1496821() {
+                        jQuery('#mlb2-1496821').find('.ml-block-success').show();
+                        jQuery('#mlb2-1496821').find('.ml-block-form').hide();
+                    };
+                </script>
+            </div>
+        </div>
+        <script type="text/javascript" src="//static1.mailerlite.com/js/w/webforms.js?v21"></script>
+
+
+
+
+          <!-- <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow fadeInUp'>
             <div ng-hide="mailchimp.result === 'success'">
               <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
               <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
@@ -37,23 +77,22 @@
               <button class="btn btn-success btn-block btn-lg" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)" analytics-on="click" analytics-event="subscribe">สมัครสมาชิก</button>
             </div>
             
-            <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+          
             <div class='show-result show-error wow fadeIn' ng-show="mailchimp.result === 'error'" ng-cloak>
               <span ng-bind-html="mailchimp.errorMessage"></span>
             </div>
 
 
-            <!-- Show success message if MailChimp returned successfully. -->
+          
             <div class='show-result show-success wow fadeIn' ng-show="mailchimp.result === 'success'" ng-cloak>
               <span ng-bind-html="mailchimp.successMessage"></span>
             </div>  
 
-          </form>
+          </form> -->
         </div>
       </div>
 
-      <p class='wow fadeIn'>** สมัครสมาชิกวันนี้ รับ ชุดคิท สำหรับทำพอร์ทโฟลิโอนักออกแบบ (Portfolio Tools Kit for Designer!) ฟรี!!</p>
-      <img src="assets/images/kit/kitgraphic.png" alt="" class='wow fadeInUp'>
+      
     </div>
   </div>
   <div class="row reason-row">
@@ -213,35 +252,45 @@
 
   <div class='row slideshow-row'>
     <div class='col-sm-8 col-xs-12 col-sm-offset-2 subscribe-box text-center'>
-      <!-- <img  src="http://placehold.it/350x150" alt=""> -->
       <h2 class='wow bounceInDown'>
         What are you waiting for? สมัครเลย!
       </h2>
-      <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl" class='wow fadeInUp'>
-        <div ng-hide="mailchimp.result === 'success'">
-          <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='trektonic'">
-          <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
-          <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='b1987670b8f559efd418e7d79'">
-          <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='36c38f0ba3'">
-
-          <input type="email" name="email" class="form-control text-center input-lg" ng-model="mailchimp.EMAIL" placeholder="Email address" required>
-          <button class="btn btn-success btn-block btn-lg" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">สมัครสมาชิก</button>
+      <div id="mlb2-1496821s" class="ml-subscribe-form">
+            <div class="ml-vertical-align-center">
+                <div class="subscribe-form ml-block-success" style="display:none">
+                    <div class="form-section show-result show-success  wow fadeIn">
+                        <h4>
+                        Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.
+                        </h4>
+                    </div>
+                </div>
+                <form class="ml-block-form" action="//app.mailerlite.com/webforms/submit/e9p3m6" data-code="e9p3m6" method="POST" target="_blank">
+                    <div class="subscribe-form wow fadeInUp">
+                        <div class="form-section">
+                            <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                                <input type="email" name="fields[email]" class="form-control text-center input-lg" placeholder="Email address" value="">
+                            </div>
+                        </div>
+                        <input type="hidden" name="ml-submit" value="1" />
+                        <button type="submit" class="primary gradient-on btn btn-success btn-block btn-lg">
+                            สมัครสมาชิก
+                        </button>
+                        <button disabled="disabled" style="display: none;" type="submit" class="loading gradient-on btn btn-success btn-block btn-lg">
+                            <img src="//static1.mailerlite.com/images/rolling.gif" width="20" height="20">
+                        </button>
+                        <p>** สมัครสมาชิกวันนี้ รับ ชุดคิท สำหรับทำพอร์ทโฟลิโอนักออกแบบ (Portfolio Tools Kit for Designer!) ฟรี!!</p>
+                        <img src="assets/images/kit/kitgraphic.png" alt="">
+                    </div>
+                </form>
+                <script>
+                    function ml_webform_success_1496821s() {
+                        jQuery('#mlb2-1496821s').find('.ml-block-success').show();
+                        jQuery('#mlb2-1496821s').find('.ml-block-form').hide();
+                    };
+                </script>
+            </div>
         </div>
-
-        <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
-        <div class='show-result show-error wow fadeIn' ng-show="mailchimp.result === 'error'" ng-cloak>
-          <span ng-bind-html="mailchimp.errorMessage"></span>
-        </div>
-
-
-        <!-- Show success message if MailChimp returned successfully. -->
-        <div class='show-result show-success wow fadeIn' ng-show="mailchimp.result === 'success'" ng-cloak>
-          <span ng-bind-html="mailchimp.successMessage"></span>
-        </div>  
-      </form>
-
-      <p>** สมัครสมาชิกวันนี้ รับ ชุดคิท สำหรับทำพอร์ทโฟลิโอนักออกแบบ (Portfolio Tools Kit for Designer!) ฟรี!!</p>
-      <img src="assets/images/kit/kitgraphic.png" alt="" class='wow fadeInUp'>
+        <script type="text/javascript" src="//static1.mailerlite.com/js/w/webforms.js?v21"></script>
     </div>
     
   </div>
