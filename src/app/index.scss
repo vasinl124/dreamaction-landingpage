@@ -37,6 +37,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 
 html, body {
+	background-color: black;
 	width:100%;
 	height: 100%;	
 	div[ui-view]{
@@ -238,6 +239,7 @@ fieldset[disabled] .btn-custom.active {
 	}
 }
 .testimonial-row {
+	background-color: white;
 	font-family: 'rsu regular';
 	padding: 20px;
 	padding-bottom: 50px;
