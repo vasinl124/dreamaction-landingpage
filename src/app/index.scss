@@ -33,9 +33,6 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 }
 
-
-
-
 @font-face {
     font-family: 'rsu light';
     src: url('../assets/fonts/rsufont/rsu_light-webfont.eot');
@@ -48,9 +45,6 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'rsu regular';
@@ -149,7 +143,7 @@ fieldset[disabled] .btn-custom.active {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-family: 'rsu regular';
-	letter-spacing: 5px;	
+	letter-spacing: 2px;	
 	h1 {
 		font-size: 40px;
 	}
