@@ -43,3 +43,15 @@
 .icon-bar {
 	color:white;
 }
+
+
+
+@media (max-width: 767px) {
+  .navbar-nav {
+      a {
+				margin: 5px !important;
+				background-color: #6C6C6C !important;
+				// border: red solid 1px !important;
+      }
+  }
+}

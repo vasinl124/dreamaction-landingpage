@@ -54,7 +54,7 @@ acme-navbar {
 
 // button
 .btn-custom { 
-  color: #ffffff; 
+  color: black; 
   background-color: #C3D82C; 
   // border-color: #FF0808; 
 } 
@@ -65,7 +65,7 @@ acme-navbar {
 .btn-custom.active, 
 .open .dropdown-toggle.btn-custom { 
   color: #ffffff; 
-  background-color: #C3D82C; 
+  background-color: #EF660A; 
 } 
  
 .btn-custom:active, 
@@ -89,7 +89,7 @@ fieldset[disabled] .btn-custom:active,
 .btn-custom.disabled.active, 
 .btn-custom[disabled].active, 
 fieldset[disabled] .btn-custom.active { 
-  background-color: #C3D82C; 
+  background-color: #EF660A; 
 } 
  
 .btn-custom .badge { 
@@ -103,14 +103,12 @@ fieldset[disabled] .btn-custom.active {
   position: relative;
 	background: url('../assets/images/bg/stairs.gif') no-repeat center center;
 	background-size: cover;
-	// background-attachment: fixed;
 	color: white;
 	box-shadow: 0px 9px 22px 3px rgba(0,0,0,0.27);
 	z-index: 10;
 }
 
 .question-col {
-	// height:80%;
 	position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -179,7 +177,6 @@ fieldset[disabled] .btn-custom.active {
 			line-height: 24px;
 		}
 		span {
-			// background-color: #F1991D;
 			background-color: black;
 			color: white;
 			padding: 0px 4px;
