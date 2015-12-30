@@ -14,6 +14,12 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .state('thankyou', {
+        url: '/thankyouforsubscribing',
+        templateUrl: 'app/thankyou/partials/thankyou.html',
+        controller: '',
+        controllerAs: 'thankyou'
+      })
     $urlRouterProvider.otherwise('/');
   }
 

@@ -6,16 +6,14 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($scope) {
-  	$scope.animateElementIn = function($el) {
-    $el.removeClass('hidden');
-    $el.addClass('animated shake'); // this example leverages animate.css classes
-  };
+  function MainController($state, $scope) {
+    var vm = this;
+  	vm.goToThankyou = function() {
+      console.log('gogogo');
+      $state.go('thankyou');
+    };
 
-  $scope.animateElementOut = function($el) {
-    $el.addClass('hidden');
-    $el.removeClass('animated shake'); // this example leverages animate.css classes
-  };
+  
  
   }
 })();

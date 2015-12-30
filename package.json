@@ -1,7 +1,9 @@
 {
   "name": "dreamactionLanding",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angular-retina": "^0.3.1"
+  },
   "scripts": {
     "test": "gulp test"
   },

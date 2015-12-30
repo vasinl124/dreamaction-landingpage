@@ -37,7 +37,6 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 
 html, body {
-
 	width:100%;
 	height: 100%;	
 	div[ui-view]{
@@ -53,10 +52,56 @@ html, body {
 acme-navbar {
 }
 
+// button
+.btn-custom { 
+  color: #ffffff; 
+  background-color: #C3D82C; 
+  // border-color: #FF0808; 
+} 
+ 
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  color: #ffffff; 
+  background-color: #C3D82C; 
+} 
+ 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  background-image: none; 
+} 
+ 
+.btn-custom.disabled, 
+.btn-custom[disabled], 
+fieldset[disabled] .btn-custom, 
+.btn-custom.disabled:hover, 
+.btn-custom[disabled]:hover, 
+fieldset[disabled] .btn-custom:hover, 
+.btn-custom.disabled:focus, 
+.btn-custom[disabled]:focus, 
+fieldset[disabled] .btn-custom:focus, 
+.btn-custom.disabled:active, 
+.btn-custom[disabled]:active, 
+fieldset[disabled] .btn-custom:active, 
+.btn-custom.disabled.active, 
+.btn-custom[disabled].active, 
+fieldset[disabled] .btn-custom.active { 
+  background-color: #C3D82C; 
+} 
+ 
+.btn-custom .badge { 
+  color: #611BBD; 
+  background-color: #ffffff; 
+}
+
+// main-row
 .main-row {
   min-height:100%;
   position: relative;
-	background: url('../assets/images/stairs_board.jpg') no-repeat center center;
+	background: url('../assets/images/bg/stairs.gif') no-repeat center center;
 	background-size: cover;
 	// background-attachment: fixed;
 	color: white;
@@ -84,7 +129,6 @@ acme-navbar {
 	}
 	p { 
 		padding-top: 2px;
-		// font-family: 'Arimo', sans-serif;
 		font-family: 'rsu light';
 		letter-spacing: 2px;	
 	}
@@ -150,6 +194,7 @@ acme-navbar {
 	padding:20px;
 	background-color: black;
 	color:white;
+	font-family: 'rsu regular';
 	.col {
 		img {
 			padding: 15px;
@@ -159,13 +204,13 @@ acme-navbar {
 }
 
 .jomself-row {
-	height: 600px;
-	background: url('../assets/images/jom/jjom2.png') no-repeat;
+	font-family: 'rsu regular';
+	background: url('../assets/images/jom/jom.jpg') no-repeat;
 	background-size: cover;
 	background-position: center center;
 	// background-position: center bottom;
-	// border: red solid 1px;
 	position: relative;
+	height: 800px;
 	.col {
 		position: absolute;
 	  top: 50%;
@@ -186,9 +231,10 @@ acme-navbar {
 		color: white;
 	}
 	h3 {
-		color: #46B4EF;
+		color: #EF7729;
 	}
 	p {
+		font-size: 18px;
 		color: white;
 	}
 }
@@ -225,9 +271,9 @@ acme-navbar {
 }
 
 .slideshow-row {
-	height: 500px;
+	height: 100%;
 	box-shadow: inset 2px 43px 300px 63px rgba(0,0,0,0.75);
-	background: url('../assets/images/stairs-white_board.jpg') no-repeat center center;
+	background: url('../assets/images/bg/stairs_white.gif') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	.subscribe-box {
@@ -294,16 +340,8 @@ acme-navbar {
 		}
 	}
 	.jomself-row {
-		// height: 600px;
-		// background: url('../assets/images/jom/jjom2.png') no-repeat;
-		// background-size: cover;
-		// background-position: center center;
-		// // background-position: center bottom;
-		// // border: red solid 1px;
-		// position: relative;
 		.col {
 			position: absolute;
-		  // top: 30%;
 		}
 
 		h1 {
@@ -319,9 +357,13 @@ acme-navbar {
 		}
 
 		p {
-			font-size: 11px;
+			font-size: 16px;
 		}
+
+		
 	}
+
+	
 }
 
 
@@ -360,15 +402,12 @@ acme-navbar {
 		}
 	}
   .jomself-row {
-		height: 565px;
-		// background: url('../assets/images/jom/jjom2.png') no-repeat;
-		// background-size: cover;
-		// background-position: center center;
-		// // background-position: center bottom;
-		// // border: red solid 1px;
-		// position: relative;
+  	height: 650px;
+		background: url('../assets/images/jom/jom_767.jpg') no-repeat;
+		background-size: 767px;
+		background-position: top center;
+		position: relative;
 		.col {
-
 			position: absolute;
 		 	bottom: 0%;
 		  transform: translateY(0%);
@@ -387,13 +426,22 @@ acme-navbar {
 			font-size: 25px;
 		}
 		h3 {
-			font-size: 15px;
+			font-size: 20px;
 		}
 		p {
 			letter-spacing: 2px;
-			font-size: 13px;
+			font-size: 15px;
 		}
 	
+	}
+
+	.slideshow-row {
+		height: auto;
+		.subscribe-box {
+			position: static;
+			top: 0%;
+			transform: translateY(0%);
+		}
 	}
 }
 
@@ -408,7 +456,10 @@ acme-navbar {
 		}
   }
   .jomself-row {
-		height: 650px;
+  	background: url('../assets/images/jom/jom_480.jpg') no-repeat;		
+		background-size: 480px;
+		background-position: top center;
+		height: 700px;
 		.col {
 			position: absolute;
 		 	// top: 50%;
@@ -429,11 +480,11 @@ acme-navbar {
 			font-size: 23px;
 		}
 		h3 {
-			font-size: 15px;
+			font-size: 17px;
 		}
 		p {
 			letter-spacing: 2px;
-			font-size: 13px;
+			font-size: 15px;
 		}
 	}
 }
@@ -459,13 +510,7 @@ acme-navbar {
   }
 
   .jomself-row {
-		height: 460px;
-		// background: url('../assets/images/jom/jjom2.png') no-repeat;
-		// background-size: cover;
-		// background-position: center center;
-		// // background-position: center bottom;
-		// // border: red solid 1px;
-		// position: relative;
+		height: 100%;
 		.col {
 			position: absolute;
 		 	top: 50%;
@@ -473,7 +518,7 @@ acme-navbar {
 		  background-color: rgba(0,0,0,0.7);
 		}
 
-			h1 {
+		h1 {
 			font-size: 120px;
 			text-transform: uppercase;
 			color: white;
@@ -486,13 +531,67 @@ acme-navbar {
 		}
 
 		h3 {
-			font-size: 15px;
+			font-size: 20px;
 		}
 
 		p {
 			letter-spacing: 2px;
-			font-size: 12px;
+			font-size: 16px;
 		}
 	
 	}
+}
+
+@media screen and (min-height: 816px) and (max-width: 767px ) and (min-width: 481px){
+	.jomself-row {
+		// height: 100%;
+
+		background: url('../assets/images/jom/jom_767.jpg') no-repeat;		
+		background-size: 767px;
+		background-position: top center;
+		// background-position: center bottom;
+		// border: red solid 1px;
+		position: relative;
+		.col {
+		  background-color: rgba(0,0,0,0.7);
+		}
+	}
+
+}
+
+//  Retina images
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (-moz-min-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 2dppx) {
+	.jomself-row {
+		background: url('../assets/images/jom/jom@2x.jpg') no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+			screen and (max-width: 767px) and (min-width: 480px) and (-moz-min-device-pixel-ratio: 2),
+ 			screen and (max-width: 767px) and (min-width: 480px) and (-o-min-device-pixel-ratio: 2/1),
+ 			screen and (max-width: 767px) and (min-width: 480px) and (min-device-pixel-ratio: 2),
+ 			screen and (max-width: 767px) and (min-width: 480px) and (min-resolution: 2dppx) {
+  .jomself-row {
+		background: url('../assets/images/jom/jom_767@2x.jpg') no-repeat;
+		background-size: 767px;
+		background-position: top center;
+	}	
+}
+
+@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+			screen and (max-width: 480px) and (-moz-min-device-pixel-ratio: 2),
+ 			screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 2/1),
+ 			screen and (max-width: 480px) and (min-device-pixel-ratio: 2),
+ 			screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .jomself-row {
+		background: url('../assets/images/jom/jom_480@2x.jpg') no-repeat;
+		background-size: 480px;
+		background-position: top center;
+	}	
 }
