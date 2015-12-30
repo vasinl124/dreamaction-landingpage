@@ -10,16 +10,18 @@
 		}
 		.download {
 			color: #EF660A;
+			animation: shake 10s infinite;
 		}
 		.download:hover, .download:active {
 			color: white;
-			animation: shake 5s infinite;
+			animation: shake 1s infinite;
 		}
 		.download-img {
 			padding-top: 10px;
+			animation: shake 5s infinite;
 		}
 		.download-img:hover {
-			animation: shake 5s infinite;
+			animation: shake 1s infinite;
 		}
 	}
 }
