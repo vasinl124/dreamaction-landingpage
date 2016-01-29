@@ -17,7 +17,7 @@
       .state('thankyou', {
         url: '/thankyouforsubscribing',
         templateUrl: 'app/thankyou/partials/thankyou.html',
-        controller: '',
+        controller: 'thankyouCtrl',
         controllerAs: 'thankyou'
       })
     $urlRouterProvider.otherwise('/');
