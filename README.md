@@ -1,14 +1,9 @@
 # Dream Action Landing Page  #
-https://dreamaction.co/vocab/
- Architectural Vocabulary List English-Thai
+http://subscribe.dreamaction.co
 
-### This Project created by ###
+### This Project is created by ###
 
 * HTML5
 * CSS
-* Node.js
-* Handlebars
+* AngularJS
 * Bootstrap
-
-##Screenshot
-![screenshot](/screenshot.jpg)
